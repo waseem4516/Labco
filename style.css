@@ -477,7 +477,75 @@ nav ul li a:hover {
 /*    For 768px Screens */
 
 @media screen and (max-width: 768px){
-
-
-
+#logo {
+    float: none;
+    padding-top: 4px;
+    text-align: center;
+}
+header {
+    background: #fff;
+    height: auto;
+    line-height: 53px;
+}
+nav li {
+    display: inline-block;
+    padding: 5px;
+    font-weight: bold;
+}
+.our-services li {
+    margin: 15px 0;
+    
+}
+.clients {
+    float: left;
+    width: 50%;
+    padding: 8px;
+}
+.para-images img {
+    width: 21%;
+    margin: 11px;
+}
+.img-left {
+    position: absolute;
+    right: -115px;
+    top: 70px;
+}
+.img-left img {
+    position: absolute;
+    top: 39px;
+    right: 8px;
+    width: 259px;
+}
+.chemical-img img {
+    width: 259px;
+    float: right;
+    position: relative;
+    bottom: 301px;
+    right: -105px;
+}
+ul.list-new {
+    width: 100%;
+}
+.facilities-container {
+    padding: 40px 40px 40px 40px;
+}
+.left-footer {
+    width: 100%;
+    height: 300px;
+    background: rgba(0,0,0, 0.4);
+    padding: 20px 20px 20px 20px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 20px;
+    float: left;
+    line-height: 37px;
+}
+.map {
+    border-radius: 10px;
+    margin-bottom: 20px;
+     margin-left: 0; 
+}
+.map iframe {
+    width: 100%;
+}
 }
