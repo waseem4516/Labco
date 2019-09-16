@@ -415,3 +415,69 @@ nav ul li a:hover {
 .font{
 	font-weight: 600;
 }
+
+/*   For 992  screens   */
+
+@media screen and (max-width: 992px)
+{
+    header {
+    background: #fff;
+    height: 63px;
+}
+    #logo {
+    float: left;
+    margin-left: 51px;
+    padding-top: 4px;
+}
+ nav li {
+    display: inline-block;
+    padding: 14px;
+    font-weight: bold;
+}
+ .clients {
+    float: left;
+    width: 33%;
+    padding: 8px;
+}
+.para-images img {
+    width: 22%;
+    margin: 11px;
+}
+.img-left {
+    position: absolute;
+    right: -46px;
+    top: 108px;
+    
+}
+.chemical-img img {
+    width: 32%;
+    float: right;
+    position: relative;
+    bottom: 281px;
+    right: -42px;
+}
+.left-footer {
+    width: 49%;
+    height: 300px;
+    background: rgba(0,0,0, 0.4);
+    padding: 20px 20px 20px 20px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 20px;
+    float: left;
+    line-height: 37px;
+}
+.labco-footer {
+    padding: 40px 50px 5px 50px;
+ 
+}
+}
+
+
+/*    For 768px Screens */
+
+@media screen and (max-width: 768px){
+
+
+
+}
