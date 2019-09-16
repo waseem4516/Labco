@@ -415,7 +415,63 @@ nav ul li a:hover {
 .font{
 	font-weight: 600;
 }
-
+#toggle
+{
+    display: none;
+}
+.togglearea
+{
+    background-color: #44A362;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.togglearea label
+{
+    background-color: white;
+    height: 45px;
+    width: 50px;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.togglearea label span
+{
+    background-color: black;
+    height: 4px;
+    width: 70%;
+    margin: 2px 0px;
+}
+.togglearea
+{
+    display: none;
+}
+.nav
+{
+    background-color: #6D6A6A;
+    display: flex;
+    justify-content: center;
+}
+.nav a
+{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 14px 28px;
+}
+.nav a:hover
+{
+    background-color: white;
+    color: black;
+}
 /*   For 992  screens   */
 
 @media screen and (max-width: 992px)
@@ -471,12 +527,37 @@ nav ul li a:hover {
     padding: 40px 50px 5px 50px;
  
 }
+
 }
 
 
 /*    For 768px Screens */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px)
+{
+  nav
+   {
+    flex-direction: column;
+    display: none;
+    }
+     #toggle:checked + nav
+    {
+        display: flex;
+    }
+     .togglearea
+     {   
+        display: flex;
+   }
+    nav ul {
+    display: contents;
+    margin-left: : 50px;
+  }
+    nav li {
+    display: inline-block;
+    padding: 4px;
+    font-weight: bold;
+    text-align: center;
+}
 #logo {
     float: none;
     padding-top: 4px;
@@ -487,11 +568,11 @@ header {
     height: auto;
     line-height: 53px;
 }
-nav li {
+/*nav li {
     display: inline-block;
     padding: 5px;
     font-weight: bold;
-}
+}*/
 .our-services li {
     margin: 15px 0;
     
