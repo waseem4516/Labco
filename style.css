@@ -3,17 +3,21 @@
 	margin: 0;
 	
 }
+/*article.labco-container {
+    overflow: hidden;
+}*/
 body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
     color: #555555;
-    line-height: 24px;
+    line-height: 24px; 
+    min-width: 400px;
+
     
 }
 header {
 	background: #fff;
-	/*height: 50px;
-	padding: 10px 0;*/
+	
 }
 #logo {
 	 float: left;
@@ -146,15 +150,11 @@ nav ul li a:hover {
 	padding-left: 20px;
 	color: #5f5f5f;
 	font-size: 14px;
-	/* font-weight: 600;*/
+	
 }
 .our-services ul li ul li{
 	    list-style: disc;
-	    /*color: #5f5f5f;
-	    font-size: 14px;
-	    font-weight: 600;
-	    padding-left: 20px;
-	    margin: 20px 0px;*/
+	
 }
 .our-services li {
 	    margin: 15px 0;
@@ -232,9 +232,7 @@ nav ul li a:hover {
 }
 .facilities li{
 	 list-style-type: disc;
-    /*background: url(images/list-content.png) no-repeat 0px 3px;*/
     color: #5f5f5f;
-    /*padding-left: 20px;*/
     margin: 15px 0px;
 
 }
@@ -251,9 +249,7 @@ nav ul li a:hover {
 	top: 25px;
 }
 .list-items-right{
-/*	position: absolute;*/
-	/*right: 400px;
-	top: 200px;*/
+
 	width: 71%;
 }
 .list-items-right h4{
@@ -339,6 +335,7 @@ nav ul li a:hover {
      
     font-weight: 600;
     font-size: 14px;
+
 }
 .footer-heading h2 {
 	text-align: center;
@@ -365,7 +362,6 @@ nav ul li a:hover {
 }
 .map {
 	border-radius: 10px;
-    -webkit-border-radius: 10px;
     margin-bottom: 20px;
     margin-left: 476px;
 }
@@ -475,7 +471,6 @@ nav ul li a:hover {
 {
     header {
     background: #fff;
-    /*height: 63px;*/
     padding: 5px 5px 14px 5px;
 }
     #logo {
@@ -530,19 +525,131 @@ nav ul li a:hover {
 
 @media only screen and (min-width: 100px) and (max-width: 699px) {
 
-body {
-     /*width: 768px;*/
-     min-width: 400px;
+
+.left-content {
+    float: left;
+    width: 100%;
+    padding: 29px 15px;
+}
+.right-content {
+    width: 100%;
+    padding: 0px 50px;
+}
+.clients-container {
+    float: left;
+    background-color: #F7F7F7;
+    padding: 40px 0px 40px 0px;
+}
+.para-images img {
+    width: 100%;
+    padding: 11px;
+    margin: 15px 0 15px 0px;
+}
+.chemical-img img {
+    width: 100%;
+    float: right;
+    position: relative;
+    bottom: 0;
+    right: -19px;
+    padding-bottom: 26px;
+}
+.description-labco {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.chemical-container ul {
+    list-style: disc;
+    margin: 10px -34px;
+}
+.list-items-right {
+
+    width: 100%;
+}
+.chemical-container {
+    width: 100%;
+    padding-top: 51px;
+}
+.chemical-container ul {
+    list-style: disc;
+     margin:0;
+}
+.labco-img {
+    text-align: center;
+    padding-top: 35px;
+    overflow: hidden;
+}
+.labco-footer {
+    padding: 40px 40px 40px 40px;
+    background-color: #222;
+    background-image: url(images/map-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.right-content img {
+    width: 100%;
+     height: 100%; 
+    /* margin: 10px auto; */
+    border: 1px solid rgba(204, 204, 204, 0.72);
+    box-shadow: 1px 2px 4px -1px rgba(0,0,0,0.25);
+    box-sizing: content-box;
+}
+#logo {
+    float: left;
+     margin-left: 0;
+    padding-top: 4px;
+}
+}
+@media only screen and (min-width: 993px) and (max-width: 1199px) 
+{
+
+nav li {
+    display: inline-block;
+    padding: 19px;
+    font-weight: bold;
+}
+.clients {
+    float: left;
+    width: 33%;
+    padding: 8px;
+}
+.para-images img {
+    width: 21%;
+    margin: 15px;
+    float: left;
+    border: 1px solid rgba(204, 204, 204, 0.72);
+    box-shadow: 1px 2px 4px -1px rgba(0,0,0,0.25);
+}
+.img-left img {
+    position: absolute;
+    top: -64px;
+    right: -74px;
+    width: 259px;
+}
+.chemical-img img {
+    width: 259px;
+    float: right;
+    position: relative;
+    bottom: 277px;
+    right: -43px;
 }
 
+.labco-footer {
+    padding: 40px 40px 40px 40px;
+    background-color: #222;
+    background-image: url(images/map-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
 }
+}
+
 /*    For 768px Screens */
 
 @media screen and (max-width: 768px)
 {
-    /*body{
-        width: 768px;
-    }*/
+   
     .about-us {
     width: 100%;
     height: 100%;
@@ -598,13 +705,8 @@ header {
     width: 50%;
     padding: 8px;
 }
-.para-images img {
-    width: 21%;
-    margin: 11px;
-}
 .img-left {
     position: absolute;
-    /*right: -115px;*/
     top: 70px;
 }
 .img-left img {
@@ -613,13 +715,7 @@ header {
     right: 28px;
     width: 200px;
 }
-.chemical-img img {
-    width: 200px;
-    float: right;
-    position: relative;
-    bottom: 301px;
-    right: -19px;
-}
+
 ul.list-new {
     width: 100%;
 }
