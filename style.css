@@ -3,9 +3,6 @@
 	margin: 0;
 	
 }
-/*article.labco-container {
-    overflow: hidden;
-}*/
 body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
@@ -44,6 +41,7 @@ nav ul {
 nav li {
 	display: inline-block;
 	padding: 23px;
+    margin-left: 25px;
 	font-weight: bold;
 }
 nav li a {
@@ -129,12 +127,12 @@ nav ul li a:hover {
 .right-content {
 	width: 50%;
 	float: right;
-	padding: 64px 74px;
+	/*padding: 64px 74px;*/
 }
 .right-content img {
 	width:300px;
     height: 200px;
-    margin: 10px auto;
+   /* margin: 10px auto;*/
     border: 1px solid rgba(204, 204, 204, 0.72);
     box-shadow: 1px 2px 4px -1px rgba(0,0,0,0.25);
     box-sizing: content-box;
@@ -174,6 +172,7 @@ nav ul li a:hover {
 	float: left;
     width: 20%;
     padding: 8px;
+    transition: transform 0.5s;
 }
 .clients a{
 	display: block;
@@ -244,6 +243,38 @@ nav ul li a:hover {
      border: 1px solid rgba(204, 204, 204, 0.72);
      box-shadow: 1px 2px 4px -1px rgba(0,0,0,0.25);
 }
+.img-left img {
+    transition: all 0.5s;
+    perspective: 1000px;
+}
+.img-left:hover img {
+    transform: rotateY(180deg);
+}
+/*.chemical-img img {
+transition: all 0.5s;
+}
+.chemical-img:hover img {
+    transform: scale(1,0);
+}*/
+.rotate:hover {
+  animation: rotation 8s linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.para-images img {
+    transition: all 0.5s;
+}
+.para-images img:hover {
+    transform: scale(1.5); 
+}
+
 .parent-items {
 	position: relative;
 	top: 25px;
@@ -445,13 +476,14 @@ nav ul li a:hover {
 {
     display: none;
 }
-.nav
+nav
 {
-    background-color: #6D6A6A;
+    
     display: flex;
     justify-content: center;
+    
 }
-.nav a
+nav a
 {
     color: white;
     text-align: center;
@@ -460,7 +492,7 @@ nav ul li a:hover {
     text-transform: uppercase;
     padding: 14px 28px;
 }
-.nav a:hover
+nav a:hover
 {
     background-color: white;
     color: black;
@@ -742,3 +774,95 @@ ul.list-new {
     width: 100%;
 }
 }
+
+
+.link {
+    transition: 0.3s ease;
+    border-top: 4px solid #ffffff;
+   border-bottom: 4px solid #ffffff;
+   padding: 15px 0;
+}
+.link:hover {
+
+    border-top: 4px solid #3fa46a;
+    border-bottom: 4px solid #3fa46a;
+    padding: 7px 0; 
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+ /* border: 1px solid #f1f1f1;*/
+  perspective: 1000px;
+  margin-top: 45px;
+
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+/*.rotateimg180:hover {
+  -webkit-transform:rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}*/
+
+.clients:hover {
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+   0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.hover02 figure img {
+    width: 300px;
+    height: auto;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.hover02 figure:hover img {
+    width: 350px;
+}
+
+

@@ -1,5 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd"> 
+<!DOCTYPE html> 
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -7,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
@@ -27,13 +27,13 @@
   <input type="checkbox" id="toggle">
 		<nav>
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Clients</a></li>
-				<li><a href="#">Facilities & Equipment</a></li>
-				<li><a href="#">Contact Us</a></li>
-				<li><a href="#" class="lang-ara">العربية</a></li>
+				<li><a class="link" href="#">Home</a></li>
+				<li><a class="link" href="#">About Us</a></li>
+				<li><a class="link" href="#">Services</a></li>
+				<li><a class="link" href="#">Clients</a></li>
+				<li><a class="link" href="#">Facilities & Equipment</a></li>
+				<li><a class="link" href="#">Contact Us</a></li>
+				<li><a class="link" href="#" class="lang-ara">العربية</a></li>
 
 			</ul>
 		</nav>
@@ -56,7 +56,7 @@
 	    <div class="green-line"></div>
 			
 		</div>
-	<div class="description">
+	<div class="description" data-aos="fade-up" data-aos-duration="500">
 		<ul class="arrow">
 			<li>LABCO (Kuwait International Laboratory), established in 1999, is the first locally owned, independent ISO/IEC 17025:2005 accredited testing laboratory in Kuwait. LABCO provides THIRD PARTY quality control and assurance services through scientific analytical data for microbiological and chemical testing, along with, Total Quality Management Services, QMS – Consultations and Training.</li>
 			<li>LABCO ISO 17025/2005 accreditation and Good Laboratory Practices – GLP implementation, ensures that the prescribed process / high quality standards are adhered to for every test conducted, thus minimizing the possibility of errors to deliver accurate and reliable results.</li>
@@ -93,13 +93,13 @@
    </div>
 </section>
 
-<section class="our-services">
+<section class="our-services" data-aos="fade-up">
 	<div class="article">
 	<div class="services-heading">
 		<h2>Services</h2>
 		<div class="colored-line"></div>
 	</div>
-	<div class="left-content">
+	<div class="left-content" data-aos="fade-up" data-aos-duration="500">
 		<ul>
 			<li>Microbiology and Chemical analysis
 				<ul class="arrow">
@@ -128,11 +128,34 @@
 			</li>
 		</ul>
 	</div>
-	<div class="right-content">
-		<img src="images/lab3.jpg" alt="">
-		<img src="images/lab2.jpg" alt="">
-
+	<div class="right-content flip-box" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+    <div class="flip-box-inner">
+    <div class="flip-box-front">
+      		<img src="images/lab3.jpg" alt="" style="width:300px;height:200px">
+      		
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>What an amazing city</p>
+    </div>
+    </div>
 	</div>
+    <div class="right-content flip-box" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+    <div class="flip-box-inner">
+    <div class="flip-box-front">
+         
+          <img src="images/lab2.jpg" alt="" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>What an amazing city</p>
+    </div>
+    </div>
+  </div>
 </div>
 </section>
 
@@ -142,122 +165,122 @@
 			<h2>Our Clients</h2>
 			<div class="colored-line"></div>
 		</div>
-
-        <div class="clients">
+      
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="250">
         	<a target="_blank" href="images/client1.jpg">
-   				 <img src="images/client1.jpg" alt="" >
-  			</a>
-        	
+   				<figure><img src="images/client1.jpg" alt="" ></figure> 
+  			</a>	
         </div>
-        <div class="clients">
+     
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="500">
         	<a target="_blank" href="images/client2.jpg">
    				 <img src="images/client2.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="250">
         	<a target="_blank" href="images/client3.jpg">
    				 <img src="images/client3.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="500">
         	<a target="_blank" href="images/client4.jpg">
    				 <img src="images/client4.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="250">
         	<a target="_blank" href="images/client5.jpg">
    				 <img src="images/client5.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="500">
         	<a target="_blank" href="images/client6.jpg">
    				 <img src="images/client6.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="250">
         	<a target="_blank" href="images/client7.jpg">
    				 <img src="images/client7.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="500">
         	<a target="_blank" href="images/client8.jpg">
    				 <img src="images/client8.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="250">
         	<a target="_blank" href="images/client9.jpg">
    				 <img src="images/client9.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="500">
         	<a target="_blank" href="images/client10.jpg">
    				 <img src="images/client10.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="250">
         	<a target="_blank" href="images/client11.jpg">
    				 <img src="images/client11.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="500">
         	<a target="_blank" href="images/client12.jpg">
    				 <img src="images/client12.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="250">
         	<a target="_blank" href="images/client13.jpg">
    				 <img src="images/client13.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="500">
         	<a target="_blank" href="images/client14.jpg">
    				 <img src="images/client14.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="250">
         	<a target="_blank" href="images/client15.jpg">
    				 <img src="images/client15.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="500">
         	<a target="_blank" href="images/client16.jpg">
    				 <img src="images/client16.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="250">
         	<a target="_blank" href="images/client17.jpg">
    				 <img src="images/client17.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="500">
         	<a target="_blank" href="images/client18.jpg">
    				 <img src="images/client18.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="250">
         	<a target="_blank" href="images/client19.jpg">
    				 <img src="images/client19.jpg" alt="" >
   			</a>
         	
         </div>
-        <div class="clients">
+        <div class="clients rotateimg180" data-aos="flip-down" data-aos-duration="500">
         	<a target="_blank" href="images/client20.jpg">
    				 <img src="images/client20.jpg" alt="" >
   			</a>
@@ -269,7 +292,7 @@
 
 </section>
 
-<section class="facilities">
+<section class="facilities" data-aos="fade-up">
 
 	<article class="facilities-container">
 		<div class="facilities-heading">
@@ -277,20 +300,28 @@
 			<div class="colored-line"></div>
 		</div>
 
-		<div class="para">
-			<p>LABCO owns one of the most sophisticated laboratories in Kuwait. The facility, spread over 750 sqm features dedicated areas for microbiological and chemical testing. Each of these areas is fully equipped with the latest technology for analytical equipment handled by highly qualified and experienced teams.</p>
-			<p>Optimum hygienic conditions are maintained throughout the facility, with special air-conditioning systems designed to cool and circulate fresh air and expel stale air after each single circulation. This helps maintain a sanitized atmosphere and prevents contamination.</p>
-			<p>Equipped with the top end analytical equipment of latest technology LABCO is currently the only lab in Kuwait capable of providing solution to a maximum of sample matrixes ranging from food, environment, hydrocarbon, building materials and pharmaceuticals, all under one roof.</p>
+		<div class="para" data-aos="fade-up" data-aos-duration="500">
+			<p data-aos="fade-up" data-aos-duration="500">LABCO owns one of the most sophisticated laboratories in Kuwait. The facility, spread over 750 sqm features dedicated areas for microbiological and chemical testing. Each of these areas is fully equipped with the latest technology for analytical equipment handled by highly qualified and experienced teams.</p>
+			<p data-aos="fade-up" data-aos-duration="500">Optimum hygienic conditions are maintained throughout the facility, with special air-conditioning systems designed to cool and circulate fresh air and expel stale air after each single circulation. This helps maintain a sanitized atmosphere and prevents contamination.</p>
+			<p data-aos="fade-up" data-aos-duration="500">Equipped with the top end analytical equipment of latest technology LABCO is currently the only lab in Kuwait capable of providing solution to a maximum of sample matrixes ranging from food, environment, hydrocarbon, building materials and pharmaceuticals, all under one roof.</p>
 		</div>
 		<div class="para-images">
-			<img src="images/mtest1.jpg" alt="para-images">
-			<img src="images/mtest2.jpg" alt="para-images">
-			<img src="images/mtest3.jpg" alt="para-images">
-			<img src="images/mtest4.jpg" alt="para-images">
+			<img src="images/mtest1.jpg" alt="para-images" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+			<img src="images/mtest2.jpg" alt="para-images" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+			<img src="images/mtest3.jpg" alt="para-images" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+			<img src="images/mtest4.jpg" alt="para-images" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
 
 		</div>
    <section class="parent-items">
-		<div class="list-items-right">
+		<div class="list-items-right" data-aos="fade-up" data-aos-duration="250">
 			<ul>
 				<li style="list-style-image: url('images/list-content.png');"><h4>Microbiology laboratory</h4></li>
 				<li class="nobackground">Real Time-Polymerase Chain Reaction (RT-PCR) is a technique used to monitor the progress of a PCR reaction (DNA amplification) in real time. RT-PCR is based on the detection of the fluorescence produced by a reporter molecule which increases, as the reaction proceeds. It is an automated, DNA-based test that detects pathogen with new levels of speed and sensitivity. System offers a testing platform for a wide range of food-borne pathogens and spoilage micro-organisms including Salmonella, Campylobacter, Listeria monocytogenes, Yeast and Mold, Enterobacter Sakazakii, etc.</li>
@@ -299,34 +330,37 @@
 			
 			
 		</div>
-		<div class="img-left">
+		<div class="img-left" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
 				<img src="images/ltest.jpg" alt="">
 		</div>
 	</section>
 
 
 	<section class="chemical-lab">
-		<div class="chemical-container">
+		<div class="chemical-container" data-aos="fade-up" data-aos-duration="250">
 			<ul>
 				<li style="list-style-image: url('images/list-content.png');"><h4>Chemistry laboratory</h4>
                  <ul>
                  	<li><span class="font">Inductively Coupled Plasma Mass Spectrometry (ICP-MS)</span> is a technique in which energy from the plasma ejects electron from shell (ionization) which produces positively charged analyte ion. Ions are separated by the mass spectrometer and measured. ICP-MS helps in determination of various elements including trace elements with excellent detection limits (low ppb – ppt). It is a fast, multi-element analysis technique with high sample throughput and low limits of detection. ICP-MS identify provenance include water (ground water, seawater, drinking water, etc.), food analysis (beef, rice, oil and fruit juice, etc.) and environmental applications.</li>
                  </ul>
 				</li>
-				
-				
 
 			</ul>
 			
 			
 		</div>
-		<div class="chemical-img">
-				<img src="images/ctest.jpg" alt="image">
+		<div class="chemical-img" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+				<img src="images/ctest.jpg" alt="image" class="rotate">
+        
 		</div>
 	</section>
 
 	<section class="chemical-lab-1">
-		<div class="chemical-lab-1-container">
+		<div class="chemical-lab-1-container" data-aos="fade-up" data-aos-duration="2000">
 			<ul>
 				<li>
                   <ul class="list-new">
@@ -351,11 +385,11 @@
 			<div class="colored-line"></div>
 
 		</div>
-		<div class="description-labco">
+		<div class="description-labco" data-aos="fade-up" data-aos-duration="2000">
 			<p>LABCO owns the first fully equipped and authorized mobile laboratories in Kuwait. LABCO’s mobile laboratories offer government and private organizations on site testing for organic and non-organic materials. The mobile units are supported with LABCO’s IT solutions and LIMS.</p>
 
 		</div>
-		<div class="labco-img">
+		<div class="labco-img" data-aos="flip-down">
 			<img src="images/mb-eng.png" alt="image">
 		</div>
 	</article>
@@ -371,7 +405,8 @@
         	
         </div>
         <div class="main-footer">
-        <div class="left-footer">
+        <div class="left-footer" data-aos="fade-up"
+     data-aos-duration="1000">
         	<div>Sulaibiya Industrial Area 2- Block no. (1),
 				Plot 102, opposite to Agility Head Office entrance,
 				Kuwait.
@@ -381,7 +416,9 @@
 				<div><img src="images/mail_icon.png" alt="Email"> Email : <span class="mail">info@labco-kw.com</span></div>
 				<div><img src="images/web.png" alt="Web"> Web : <span class="mail">www.labco-kw.com</span></div>
         </div>
-        <div class="right-footer">
+        <div class="right-footer" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
         	<div class="map">
         		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3480.409212740918!2d47.84119961442337!3d29.270311961680797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf918792906e2d%3A0xf62763dc935c0bf6!2sKuwait%20International%20Laboratory%20(LABCO)!5e0!3m2!1sen!2s!4v1568374038270!5m2!1sen!2s" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         	</div>
@@ -396,7 +433,11 @@
 		</footer>
 
 </main>
-<script type="text/javascript" src="prefixfree.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
 
